@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    <script>
+        //задание 1.28 Дана длина ребра куба. Найти объем куба и площадь его боковой поверхности
+        var cubeSideLenth, vOfCube, pSideOfCube;
+
+        cubeSideLenth = parseFloat(prompt("Введите длину ребра куба: "));
+
+        vOfCube = Math.pow(cubeSideLenth,3);
+        pSideOfCube = 4* Math.pow(cubeSideLenth,2);
+        alert("Объём куба = "+vOfCube+"\nПлощадь бок. поверх. куба = "+pSideOfCube);
+
+        //задание 2.3. Дана масса в килограммах. Найти число полных тонн в ней
+        var weightInKilo = parseFloat(prompt("Введите массу в кг: ")), weightInTons= weightInKilo /1000;
+        alert("Ваша масса в кг переведена в тонны: "+ weightInTons);
+
+        //задание 2.10. Дано двузначное число. Найти:
+        // а) число десятков в нем;
+        // б) число единиц в нем;
+        // в) сумму его цифр;
+        // г) произведение его цифр.
+        var number, d1,d10,sumOfNumbers, productOfNumbers;
+
+        number = parseInt(prompt("Введите двузначное целое число: "));
+        d1 = number%10;
+        d2 = Math.floor(number/10);
+        alert("Сумма цифр числа: "+(d1+d2)+"\nПроизведение цифр числа: "+(d1*d2));
+    </script>
+</body>
+</html>
