@@ -6,6 +6,38 @@
     <title>JS: основы языка</title>
 </head>
 <body>
+    <h1>JavaScript</h1>
     
+    <script>
+        //Задачки с преподавателем
+        //1
+        // let x1,x2,sum;
+        // x1 = parseFloat(prompt("Введите первое число: ",0));
+        // x2 = parseFloat(prompt("Введите второе число: ",0));
+
+        // sum = x1 + x2;
+
+        // alert("x1 + x2 = " + sum);
+
+        //2
+        // var numInFolder, numOnPage, numOfPages;
+
+        // numInFolder = parseInt(prompt("Введите кол-во фото в папке: ",0));
+        // numOnPage = parseInt(prompt("Введите кол-во фото на странице: ",0));
+        // numOfPages = Math.ceil(numInFolder/numOnPage);
+
+        // alert("Кол-во страниц: "+numOfPages);
+
+        //3
+        /*Дано 6-и значное число, найти сумму его цифр*/
+        let number,d,sum=0;
+        number = 123456;
+        while(number>0){
+            d = number%10;
+            number = Math.floor(number/10);
+            sum+=d;
+        }
+        console.log(sum);
+    </script>
 </body>
 </html>
