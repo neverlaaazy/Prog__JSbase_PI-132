@@ -1,6 +1,6 @@
 
 .wrapper{
-    max-width: 1140px;
+    max-width: 600px;
     margin: 0 auto;
 }
 #formCreatTask{
@@ -25,12 +25,15 @@
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 20px;
+    transition: all 0.3s;
 }
 .btnSort:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: darkblue;
     color: white;
 }
 .task{
+    display: flex;
+    justify-content: space-between;
     border: 2px solid darkblue;
     border-radius: 10px;
     padding: 5px;
@@ -40,4 +43,27 @@
     content: "!";
     color: red;
     margin-left: 10px;
+}
+.btn-edit,
+.btn-remove{
+    color: darkblue;
+    margin-left: 5px;
+    transition: color 0.5s;
+}
+.btn-edit:hover,
+.btn-edit:focus,
+.btn-remove:hover,
+.btn-remove:focus{
+    color: rgb(55, 0, 255);
+}
+
+.btn-creat-task{
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+.btn-creat-task:hover{
+    background-color: darkblue;
+        color: white;
 }

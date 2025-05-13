@@ -13,22 +13,38 @@
     <div class="wrapper">
         <form id="formCreatTask" action="">
             <input id="textTask" type="text" placeholder="Введите задачу:"><br>
-            <input id="btnCreatTask" type="submit" value="Создать задачу!">
+            <input id="btnCreatTask" class="btn-creat-task" type="submit" value="Создать задачу!">
         </form>
         <div class="listBtns">
             <button id="btnSortAlpha" class="btnSort">Sort по алфавиту</button>
             <button id="btnSortRAlpha" class="btnSort">RSort по алфавиту</button>
             <button id="btnSortImp" class="btnSort">Sort срочных задач!</button>
+            <input id="sortText" class="btnSort" type="text" placeholder="'Текст'">
+            <button id="btnSortText" class="btnSort">Поиск по тексту!</button>
+            <button id="btnSortDelete" class="btnSort">Сброс фильтрации!</button>
+
         </div>
         <div class="container">
             <div class="task">
                 <span>Поиграть в DOTA2</span>
+                <div class="btns">
+                    <i tabindex="0" class="bi bi-pencil-fill btn-edit"></i>
+                    <i tabindex="0" class="bi bi-trash-fill btn-remove"></i>
+                </div>
             </div>
             <div class="task importent">
                 <span>Вкусно покушать</span>
+                <div class="btns">
+                    <i tabindex="0" class="bi bi-pencil-fill btn-edit"></i>
+                    <i tabindex="0" class="bi bi-trash-fill btn-remove"></i>
+                </div>
             </div>
             <div class="task importent">
                 <span>Посмотреть Большого Сайгона</span>
+                <div class="btns">
+                    <i tabindex="0" class="bi bi-pencil-fill btn-edit"></i>
+                    <i tabindex="0" class="bi bi-trash-fill btn-remove"></i>
+                </div>
             </div>
         </div>
     </div>
