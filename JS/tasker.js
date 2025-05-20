@@ -58,7 +58,11 @@ btn4.addEventListener("click",function(){
     }
 })
 btn5.addEventListener("click",function(){
-    
+    let newTasks = [...tasks];
+    container.innerHTML="";
+    for(let i in newTasks){
+        container.append(newTasks[i])
+    }
 })
 // Добавление задачи
 btnCreatTask.addEventListener("click",function(event){
