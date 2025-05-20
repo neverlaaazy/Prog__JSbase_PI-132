@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    min-height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+    background-color: rgb(231, 231, 231);
+}
+.container{
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    
+    background-color: #1ccdda;
+    min-height: 100px;
+}
+.cntHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
